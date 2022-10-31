@@ -1,0 +1,32 @@
+.bar {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    rgba(42, 114, 222, 0.54),
+    rgba(107, 166, 255, 0.28)
+  );
+  border: 2px solid #2a72de;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+}
+
+.bar > img {
+  margin-left: 2rem;
+}
+
+.bar > span {
+  margin-left: 0.5rem;
+  color: #2a72de;
+}
+
+@media screen and (width< 768px) {
+  .bar {
+    width: 100%;
+  }
+}

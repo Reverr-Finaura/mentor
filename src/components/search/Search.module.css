@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background: #f6f6f6;
+  border: 3px solid #2a72de;
+  border-radius: 6px;
+}
+
+.search > img {
+  width: 2rem;
+  object-fit: contain;
+}
+
+.search > input {
+  padding: 0.5rem;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: rgba(32, 32, 32, 0.5);
+  width: 100%;
+}

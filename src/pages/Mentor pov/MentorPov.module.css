@@ -1,0 +1,200 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body {
+  width: 96%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content {
+  width: 85%;
+  margin: auto 5rem auto 10rem;
+}
+
+.meetsNCal {
+  display: flex;
+  margin: auto;
+}
+
+.meets {
+  flex: 0.7;
+  background: #ffffff;
+  border-radius: 5px;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 1% 3%;
+}
+
+.meets > h3 {
+  font-weight: 500;
+  font-size: 35px;
+  color: #2a72de;
+  text-align: center;
+  margin-top: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(42, 114, 222, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #2a72de;
+}
+
+.meet {
+  background: rgba(42, 114, 222, 0.75);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 27px;
+  color: #fff;
+  text-align: center;
+  padding: 15px 23px;
+  margin-bottom: 4%;
+}
+
+.meet > p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.meet > h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.no_meetings {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btns > img {
+  width: 3rem;
+}
+
+.btns > button {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #2a72de;
+  box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.calender {
+  flex: 0.3;
+  text-align: center;
+  margin-left: 3%;
+}
+
+.calender > h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 0;
+  color: #2a72de;
+}
+
+.cal {
+  background-color: #fff;
+  color: #2a72de;
+  border: none;
+}
+
+.meetSch {
+  background: linear-gradient(
+    129.9deg,
+    rgba(42, 115, 222, 0.9) 0%,
+    rgba(0, 102, 255, 0.405) 73.5%
+  );
+  box-shadow: -4px 6px 12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(500px);
+  padding: 10px;
+  margin-top: 5%;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.meetSch > h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.meetSch > p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.meetSch > p > span {
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .meetsNCal {
+    display: block;
+  }
+
+  .meets > h3 {
+    font-size: 27px;
+  }
+
+  .meet > p {
+    font-size: 18px;
+  }
+  .meet > h3,
+  .calender > h1 {
+    font-size: 23px;
+  }
+
+  .btns > img {
+    width: 2rem;
+  }
+
+  .btns > button {
+    font-size: 17px;
+  }
+
+  .calender {
+    display: flex;
+    margin-top: 4%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .body {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    margin: 2rem auto;
+  }
+
+  .meetsNCal {
+    display: block;
+  }
+}

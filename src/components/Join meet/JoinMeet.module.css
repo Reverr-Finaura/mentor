@@ -1,0 +1,66 @@
+.joinOrCancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5% auto;
+  background: #ffffff;
+  border: 3px solid #2a72de;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25),
+    inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.joinbtn,
+.cancelbtn {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.joinbtn {
+  background: #2a72de;
+  box-shadow: inset 4px -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cancelbtn {
+  background: #d73232;
+  box-shadow: inset 4px -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+button > span {
+  font-weight: 700;
+}
+
+.joinOrCancel > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(32, 32, 32, 0.9);
+}
+
+@media (max-width: 1024px) {
+  .joinbtn,
+  .cancelbtn,
+  .joinOrCancel > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .joinOrCancel {
+    display: block;
+    /* border: none; */
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* .joinbtn,
+  .cancelbtn,
+  .joinOrCancel > p {
+    font-size: 16px;
+  }*/
+}
